@@ -1,8 +1,10 @@
 package dev.syamsu.projects.bench
 
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import androidx.tracing.Trace
 import coil.load
 import dev.syamsu.projects.bench.databinding.ListItemBinding
 import java.text.SimpleDateFormat
@@ -27,7 +29,12 @@ class SimpleRvAdapter : RecyclerView.Adapter<SimpleRvAdapter.VH>() {
     override fun getItemCount() = items.size
 
     override fun onBindViewHolder(holder: VH, position: Int) {
+        Trace.beginSection("RV onBind load image")
         holder.binding.imageView.load(items[position].imageUrl)
+        Trace.endSection()
+        Trace.beginSection("RV onBind show hide button")
+        // if-else show/hide button
+        Trace.endSection()
         holder.binding.tvTitle.text = items[position].title
     }
 

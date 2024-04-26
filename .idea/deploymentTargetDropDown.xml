@@ -2,6 +2,12 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="BaselineProfileGenerator">
+        <State />
+      </entry>
+      <entry key="ExampleStartupBenchmark">
+        <State />
+      </entry>
       <entry key="Generate Baseline Profile for app">
         <State />
       </entry>
@@ -27,7 +33,7 @@
           <timeTargetWasSelectedWithDropDown value="2024-04-15T07:49:28.475490Z" />
         </State>
       </entry>
-      <entry key="rvScroll()">
+      <entry key="scrollRv()">
         <State />
       </entry>
     </value>
