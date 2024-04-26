@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Sample Benchmark App"
 include ':app'
-include ':benchmark'

@@ -25,11 +25,6 @@ android {
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-        benchmark {
-            initWith release
-            matchingFallbacks = ['release']
-            debuggable false
-        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
